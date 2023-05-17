@@ -8,8 +8,8 @@ public class DatabaseUtill {
 		try {
 			System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
 			String dbURL="jdbc:mysql://localhost:3307/LectureEvaluation";
-			String dbID="root";
-			String dbPassword="1234";
+			String dbID="YourId";
+			String dbPassword="YourPassword";
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			return DriverManager.getConnection(dbURL,dbID,dbPassword);
 		}catch(Exception e){
